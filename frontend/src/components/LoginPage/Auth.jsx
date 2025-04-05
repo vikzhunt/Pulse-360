@@ -7,8 +7,9 @@ import { Mail, Lock, User, ArrowRight, UserCheck } from 'lucide-react';
 function Auth() {
   const [isLogin, setIsLogin] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [role, setRole] = useState('Viewer');
+  // const [role, setRole] = useState('Viewer');
   const navigate = useNavigate();
+  
 
   const toggleForm = () => {
     setIsAnimating(true);
@@ -83,7 +84,7 @@ function Auth() {
           </div>
 
           <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
-            <div className="relative">
+            {/* <div className="relative">
               <UserCheck className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
               <select
                 value={role}
@@ -94,7 +95,7 @@ function Auth() {
                 <option value="Client">Client</option>
                 <option value="Admin">Admin</option>
               </select>
-            </div>
+            </div> */}
             
             {!isLogin && (
               <div className="relative">
@@ -135,19 +136,27 @@ function Auth() {
           </form>
 
           <div className="mt-6">
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-center text-sm">
               {isLogin ? "Don't have an account?" : "Already have an account?"}
               <button
                 onClick={toggleForm}
                 className="ml-2 text-red-600 hover:text-red-800 font-medium transition-colors"
               >
                 {isLogin ? 'Sign Up' : 'Log In'}
+                
               </button>
             </p>
-          </div>
 
-          <div className="mt-8 pt-8 border-t border-gray-200">
-            <div className="mt-4 flex space-x-4 text-sm text-gray-500">
+          </div>
+          <div className="mt-2 space-y-3">
+            <p className="text-center text-gray-500 text-sm">or continue with</p>
+            <div className="flex flex-col space-y-3">
+              <button className="w-full flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-lg hover:bg-gray-50 transition">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-5 h-5" />
+                <span className="text-sm text-gray-700">Continue with Google</span>
+              </button>
+            </div>
+            <div className="mt-4 flex space-x-4 justify-center text-sm text-gray-500">
               <a href="#" className="hover:text-gray-700 transition-colors">Privacy Policy</a>
               <span>•</span>
               <a href="#" className="hover:text-gray-700 transition-colors">Terms & Conditions</a>

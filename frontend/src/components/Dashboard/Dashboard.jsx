@@ -80,7 +80,7 @@ const Dashboard = () => {
     {
       title: 'Management',
       color: 'blue',
-      bgClass: 'from-blue-50 to-blue-100/50',
+      bgClass: 'from-blue-100 to-blue-100/40',
       items: [
         { id: 'admin', icon: UserCog, label: 'Administration Center' },
         { id: 'delegation', icon: Users, label: 'Delegation' },
@@ -92,7 +92,7 @@ const Dashboard = () => {
     {
       title: 'Compliance & Safety',
       color: 'purple',
-      bgClass: 'from-purple-50 to-purple-100/50',
+      bgClass: 'from-purple-100 to-purple-100/50',
       items: [
         { id: 'audits', icon: ClipboardList, label: 'Audits Management' },
         { id: 'compliance', icon: Shield, label: 'Compliance Obligations' },
@@ -104,7 +104,7 @@ const Dashboard = () => {
     {
       title: 'Finance & Operations',
       color: 'emerald',
-      bgClass: 'from-red-50 to-red-100/50',
+      bgClass: 'from-red-100 to-red-100/50',
       items: [
         { id: 'expenses', icon: Wallet, label: 'Expense Management' },
         { id: 'invoicing', icon: Receipt, label: 'Invoicing System' },
@@ -116,7 +116,7 @@ const Dashboard = () => {
     {
       title: 'Supply Chain',
       color: 'amber',
-      bgClass: 'from-amber-50 to-amber-100/50',
+      bgClass: 'from-amber-100 to-amber-100/50',
       items: [
         { id: 'inventory', icon: Boxes, label: 'Inventory Management' },
         { id: 'logistics', icon: Truck, label: 'Logistics Control' },
@@ -128,7 +128,7 @@ const Dashboard = () => {
     {
       title: 'Human Resources',
       color: 'rose',
-      bgClass: 'from-orange-50 to-orange-100/50',
+      bgClass: 'from-orange-100 to-orange-100/50',
       items: [
         { id: 'recruitment', icon: UserPlus, label: 'Recruitment' },
         { id: 'training', icon: GraduationCap, label: 'Training & Development' },
@@ -140,7 +140,7 @@ const Dashboard = () => {
     {
       title: 'IT & Infrastructure',
       color: 'cyan',
-      bgClass: 'from-cyan-50 to-cyan-100/50',
+      bgClass: 'from-cyan-100 to-cyan-100/50',
       items: [
         { id: 'systems', icon: Server, label: 'System Administration' },
         { id: 'network', icon: Globe, label: 'Network Management' },
@@ -152,7 +152,7 @@ const Dashboard = () => {
     {
       title: 'Customer Relations',
       color: 'indigo',
-      bgClass: 'from-indigo-50 to-indigo-100/50',
+      bgClass: 'from-indigo-100 to-indigo-100/50',
       items: [
         { id: 'support', icon: Headphones, label: 'Customer Support' },
         { id: 'communication', icon: MessagesSquare, label: 'Communication Center' },
@@ -164,7 +164,7 @@ const Dashboard = () => {
     {
       title: 'Quality Management',
       color: 'fuchsia',
-      bgClass: 'from-fuchsia-50 to-fuchsia-100/50',
+      bgClass: 'from-fuchsia-100 to-fuchsia-100/50',
       items: [
         { id: 'quality-control', icon: ClipboardList, label: 'Quality Control' },
         { id: 'documentation', icon: FileSpreadsheet, label: 'Documentation' },
