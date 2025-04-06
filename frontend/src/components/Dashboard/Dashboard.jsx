@@ -179,7 +179,7 @@ const Dashboard = () => {
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
       <div 
-        className={`bg-emerald-900/80 text-white transition-all duration-300 ${
+        className={`bg-emerald-950/80 text-white transition-all duration-300 ${
           isCollapsed ? 'flex flex-col items-center' : ''
         } ${
           isCollapsed ? 'w-16' : 'w-64'
@@ -201,8 +201,8 @@ const Dashboard = () => {
               <button
                 key={item.id}
                 onClick={() => setActiveCategory(item.id)}
-                className={`w-full flex items-center p-4 hover:bg-emerald-900 ${ isCollapsed? 'rounded-lg mb-2' : ''} transition-colors ${
-                  activeCategory === item.id ? 'bg-emerald-900' : ''
+                className={`w-full flex items-center p-4 hover:bg-emerald-900/80 ${ isCollapsed? 'rounded-lg mb-2' : ''} transition-colors ${
+                  activeCategory === item.id ? 'bg-emerald-900/80' : ''
                 }`}
               >
                 <SidebarIcon size={20} />
@@ -285,7 +285,7 @@ const Dashboard = () => {
                   Filter
                 </button>
                 <button 
-                  className="px-4 py-2 text-white rounded-lg bg-emerald-900/80 hover:bg-emerald-800 text-sm font-medium"
+                  className="px-4 py-2 text-white rounded-lg bg-emerald-700 hover:bg-emerald-800 text-sm font-medium"
                 >
                   Add New Module
                 </button>
